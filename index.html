@@ -17,9 +17,35 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div id="motiv" class="category" style="display:none;"><img src="images/mq/mq01.png" alt="love quote"></div>
+        <div class="buttons">
+            <div class="b-wrapper">
+                <p>motivational</p>
+                <button class="b-blue" onclick="showCategory('mq')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-blue.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
+            </div>
+                
+            <div class="b-wrapper">
+                <p>love</p>
+                <button class="b-blue" onclick="showCategory('lq')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-red.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
+            </div>
+            
+            <div class="b-wrapper">
+                <p>shorts</p>
+                <button class="b-blue" onclick="showCategory('sgq')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-green.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
+            </div>
+            
+            <div class="b-wrapper">
+                <p>songs</p>
+                <button class="b-blue" onclick="showCategory('sgq')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-lightblue.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
+            </div>
+                
+        </div>
+        <section class="quotes-container">
+            <div id="motiv" class="category"><img src="images/mq/mq01.png" alt="love quote" width="150" height="150"></div>
+            <div id="love" class="category"><img src="images/lq/lq01.png" alt="love quote" width="150" height="150"></div>
+            <div id="short" class="category"><img src="images/shq/shq01.png" alt="love quote" width="150" height="150"></div>
+            <div id="song" class="category"><img src="images/sgq/sgq01.png" alt="love quote" width="150" height="150"></div>
         </section>
+       
     </main>
 </body>
 </html>
