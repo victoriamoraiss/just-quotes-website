@@ -71,3 +71,10 @@ section {
     margin: 5px 0;
     font-family: Georgia, Times;
   }
+
+#clickbutton {
+    padding-top: 20px 0;
+    font-family: Georgia, Times;
+    margin-top: 0;
+}
+

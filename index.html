@@ -17,6 +17,7 @@
         </nav>
     </header>
     <main>
+        <p id="clickbutton" style="text-align: center; margin-bottom: 40px; font-weight: bold;"><em>click</em> on the buttons to select a category</p>
         <div class="buttons">
             <div class="b-wrapper">
                 <p>motivational</p>
@@ -30,7 +31,7 @@
             
             <div class="b-wrapper">
                 <p>shorts</p>
-                <button class="b-blue" onclick="showCategory('sgq')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-green.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
+                <button class="b-blue" onclick="showCategory('shq')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-green.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
             </div>
             
             <div class="b-wrapper">
@@ -45,7 +46,41 @@
             <div id="short" class="category"><img src="images/shq/shq01.png" alt="love quote" width="150" height="150"></div>
             <div id="song" class="category"><img src="images/sgq/sgq01.png" alt="love quote" width="150" height="150"></div>
         </section>
-       
     </main>
+    <script>
+        let = currentCategory = null // Nenhuma categoria selecionada inicialmente
+
+        function showCategory(category) {
+            const categories = document.querySelectorAll('.category')
+            
+            // Se clicar na mesma categoria, mostra tudo
+            if(currentCategory === category) {
+                categories.forEach(el => el.styles.display = 'block')
+                currentCategory = null // Resetar a seleção
+                return
+            }
+
+            // Caso contrário, esconde todas e mostra apenas a selecionada
+            categories.forEach(el => el.style.display = 'none')
+        
+            if (category === 'mq') {
+                document.getElementById('motiv').style.display = 'block'
+            } else if (category === 'lq') {
+                document.getElementById('love').style.display = 'block'
+            } else if (category === 'shq') {
+                document.getElementById('short').style.display = 'block'
+            } else if (category === 'sgq') {
+                document.getElementById('song').style.display = 'block'
+            }
+            
+            currentCategory = category;
+        }
+
+        // Mostrar tudo no início
+        window.onload = () => {
+            const categories = document.querySelectorAll('.category')
+            categories.forEach(el => el.style.display = 'block')
+        }
+    </script>
 </body>
 </html>
