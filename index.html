@@ -40,50 +40,11 @@
             </div>
                 
         </div>
-        <section class="quotes-container">
-            <div id="motiv" class="category"><img src="images/mq/mq01.png" alt="love quote" width="150" height="150"></div>
-            <div id="love" class="category"><img src="images/lq/lq01.png" alt="love quote" width="150" height="150"></div>
-            <div id="short" class="category"><img src="images/shq/shq01.png" alt="love quote" width="150" height="150"></div>
-            <div id="song" class="category"><img src="images/sgq/sgq01.png" alt="love quote" width="150" height="150"></div>
-        </section>
-        <section id="about">
-            <p>This site is dedicated to quotes—discover and enjoy inspiring to share with other :)</p>
-        </section>
+        <section class="quotes-container" id="quotesContainer"></section>
     </main>
-    <script>
-        let = currentCategory = null // Nenhuma categoria selecionada inicialmente
-
-        function showCategory(category) {
-            const categories = document.querySelectorAll('.category')
-            
-            // Se clicar na mesma categoria, mostra tudo
-            if(currentCategory === category) {
-                categories.forEach(el => el.styles.display = 'block')
-                currentCategory = null // Resetar a seleção
-                return
-            }
-
-            // Caso contrário, esconde todas e mostra apenas a selecionada
-            categories.forEach(el => el.style.display = 'none')
-        
-            if (category === 'mq') {
-                document.getElementById('motiv').style.display = 'block'
-            } else if (category === 'lq') {
-                document.getElementById('love').style.display = 'block'
-            } else if (category === 'shq') {
-                document.getElementById('short').style.display = 'block'
-            } else if (category === 'sgq') {
-                document.getElementById('song').style.display = 'block'
-            }
-            
-            currentCategory = category;
-        }
-
-        // Mostrar tudo no início
-        window.onload = () => {
-            const categories = document.querySelectorAll('.category')
-            categories.forEach(el => el.style.display = 'block')
-        }
-    </script>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 Just Quotes. All rights reserved.</p>
+    </footer>
 </body>
 </html>
