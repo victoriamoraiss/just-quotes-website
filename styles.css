@@ -61,6 +61,7 @@ section {
     padding-top: 5px 0;
   }
 
+
 .b-wrapper {
     display: inline-block;
     text-align: center;
@@ -74,7 +75,18 @@ section {
 
 #clickbutton {
     padding-top: 20px 0;
-    font-family: Georgia, Times;
+    font-family: Arial, Helvetica;
+    font-size: 15px;
     margin-top: 0;
 }
 
+.button img {
+    transition: filter 0.2s ease, transform 0.2s ease
+}
+
+.button:hover img{
+    filter: brightness(1.2);
+}
+.button:active img {
+    transform: scale(1.1);
+}
