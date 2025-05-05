@@ -116,4 +116,23 @@ footer {
 
 .quotes-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.category a {
+    background-color: rgb(195, 221, 221);
+    color: rgb(103, 133, 138);
+    padding: 3px 6px;
+    margin-top: 3px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s
+}
+
+.category a:hover {
+    background-color:  #e3ecec;;
 }

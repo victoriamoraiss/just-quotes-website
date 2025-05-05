@@ -34,13 +34,13 @@ window.onload = () => {
 
 const quotes = [
     {id: "motiv", src: "images/mq/mq01.png", alt: "motivational quote"},
-    {id: "motiv", src: "images/mq/mq02.png", alt: "motivational quote"},
+    {id: "song", src: "images/sgq/sgq02.png", alt: "song quote"},
     {id: "love", src: "images/lq/lq01.png", alt: "love quote"},
-    {id: "love", src: "images/lq/lq02.png", alt: "love quote"},
     {id: "short", src: "images/shq/shq01.png", alt: "short quote"},
-    {id: "short", src: "images/shq/shq02.png", alt: "short quote"},
+    {id: "motiv", src: "images/mq/mq02.png", alt: "motivational quote"},
     {id: "song", src: "images/sgq/sgq01.png", alt: "song quote"},
-    {id: "song", src: "images/sgq/sgq02.png", alt: "song quote"}
+    {id: "short", src: "images/shq/shq02.png", alt: "short quote"},
+    {id: "love", src: "images/lq/lq02.png", alt: "love quote"}
 ]
 
 const container = document.getElementById("quotesContainer")
@@ -56,6 +56,18 @@ quotes.forEach(quote => {
     img.width = 160
     img.height = 160
 
+const downloadBtn = document.createElement("a")
+downloadBtn.href = quote.src
+downloadBtn.download = "quote-justquotes.png"
+downloadBtn.textContent = "download";
+downloadBtn.style.display = "block"; // coloca abaixo da imagem
+downloadBtn.style.marginTop = "5px";
+
+
+
     div.appendChild(img)
+    div.appendChild(downloadBtn)
     container.appendChild(div)
+    
 })
+
