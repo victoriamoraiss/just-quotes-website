@@ -40,11 +40,12 @@ h1 {
 .quotes-container {
     padding: 0px 0;
     margin: 350px;
-    margin-top: 40px;
+    margin-top: 20px;
     padding-top: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
+    border-radius: 8px;
 }
 
 main {
@@ -120,6 +121,8 @@ footer {
     gap: 20px;
     justify-content: center;
     padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
 .category a {
@@ -135,4 +138,21 @@ footer {
 
 .category a:hover {
     background-color:  #e3ecec;;
+}
+
+#quote-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; /* espaço entre as imagens */
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.quote-img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 50px;
 }

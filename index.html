@@ -24,25 +24,30 @@
         <div class="buttons">
             <div class="b-wrapper">
                 <p>motivational</p>
-                <button class="button" onclick="showCategory('mq')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-blue.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
+                <button class="button" onclick="showCategory('motiv')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-blue.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
             </div>
                 
             <div class="b-wrapper">
                 <p>love</p>
-                <button class="button" onclick="showCategory('lq')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-red.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
+                <button class="button" onclick="showCategory('love')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-red.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
             </div>
             
             <div class="b-wrapper">
                 <p>shorts</p>
-                <button class="button" onclick="showCategory('shq')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-green.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
+                <button class="button" onclick="showCategory('short')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-green.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
             </div>
             
             <div class="b-wrapper">
                 <p>songs</p>
-                <button class="button" onclick="showCategory('sgq')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-lightblue.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
+                <button class="button" onclick="showCategory('song')" style="border: none; background: transparent; padding: 0;  "><img src="images/buttons/button-lightblue.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
             </div>
-                
+
+            <div class="b-wrapper">
+                <p>show all</p>
+                <button class="button" onclick="showAllquotes()" style="border: none; background: transparent; padding: 0px;  "><img src="images/buttons/button-all.png"alt="button" class="icon" width="50px" height="50px" style="border: none; background: transparent;"></button>
+            </div>
         </div>
+        <div id="quote-container"></div>
         <div class="quotes-container" id="quotesContainer"></div>
     </main>
     <script src="script.js"></script>

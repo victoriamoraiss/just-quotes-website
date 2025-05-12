@@ -1,35 +1,26 @@
 let = currentCategory = null // Nenhuma categoria selecionada inicialmente
 
-function showCategory(category) {
-    const categories = document.querySelectorAll('.category')
-    
-    // Se clicar na mesma categoria, mostra tudo
-    if(currentCategory === category) {
-        categories.forEach(el => el.style.display = 'block')
-        currentCategory = null // Resetar a seleção
-        return
+ function showCategory(categoryId) {
+      
+       const container = document.getElementById('quote-container');
+      container.innerHTML = ""; // limpa conteúdo anterior
+
+      const filteredQuotes = quotes.filter(q => q.id === categoryId);
+
+      filteredQuotes.forEach(quote => {
+        const img = document.createElement('img');
+        img.src = quote.src;
+        img.alt = quote.alt;
+        img.classList.add('quote-img');
+        container.appendChild(img);
+      });
+
     }
 
-    // Caso contrário, esconde todas e mostra apenas a selecionada
-    categories.forEach(el => el.style.display = 'none')
-
-    if (category === 'mq') {
-        document.getElementById('motiv').style.display = 'block'
-    } else if (category === 'lq') {
-        document.getElementById('love').style.display = 'block'
-    } else if (category === 'shq') {
-        document.getElementById('short').style.display = 'block'
-    } else if (category === 'sgq') {
-        document.getElementById('song').style.display = 'block'
-    }
-    
-    currentCategory = category;
-}
-
-// Mostrar tudo no início
-window.onload = () => {
-    const categories = document.querySelectorAll('.category')
-    categories.forEach(el => el.style.display = 'block')
+    function showAllquotes() {
+        document.getElementById("quotesContainer").style.display = "flex";
+        document.getElementById("quote-container").innerHTML = ""; // esconde outras categorias
+        
 }
 
 const quotes = [
@@ -70,8 +61,6 @@ downloadBtn.download = "quote-justquotes.png"
 downloadBtn.textContent = "download";
 downloadBtn.style.display = "block"; // coloca abaixo da imagem
 downloadBtn.style.marginTop = "5px";
-
-
 
     div.appendChild(img)
     div.appendChild(downloadBtn)
