@@ -5,7 +5,7 @@ function showCategory(category) {
     
     // Se clicar na mesma categoria, mostra tudo
     if(currentCategory === category) {
-        categories.forEach(el => el.styles.display = 'block')
+        categories.forEach(el => el.style.display = 'block')
         currentCategory = null // Resetar a seleção
         return
     }
