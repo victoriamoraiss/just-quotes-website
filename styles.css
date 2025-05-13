@@ -157,14 +157,3 @@ footer {
   margin-bottom: 50px;
 }
 
-.zoomable {
-  transition: transform 0.3s ease;
-  cursor: zoom-in;
-}
-
-.zoomed {
-  transform: scale(2);
-  z-index: 1000;
-  position: relative;
-  cursor: zoom-out;
-}

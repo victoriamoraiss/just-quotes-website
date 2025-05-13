@@ -11,7 +11,7 @@ let = currentCategory = null // Nenhuma categoria selecionada inicialmente
         const img = document.createElement('img');
         img.src = quote.src;
         img.alt = quote.alt;
-        img.classList.add('quote-img', 'zoomable');
+        img.classList.add('quote-img');
         container.appendChild(img);
       });
 
@@ -68,8 +68,3 @@ downloadBtn.style.marginTop = "5px";
     
 })
 
-document.addEventListener("click", function (e) {
-  if (e.target.classList.contains("zoomable")) {
-    e.target.classList.toggle("zoomed");
-  }
-});
