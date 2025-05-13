@@ -156,3 +156,15 @@ footer {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   margin-bottom: 50px;
 }
+
+.zoomable {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.zoomed {
+  transform: scale(2);
+  z-index: 1000;
+  position: relative;
+  cursor: zoom-out;
+}
