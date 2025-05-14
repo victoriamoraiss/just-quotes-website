@@ -53,6 +53,14 @@ const quotes = [
     {id: "short", src: "images/shq/shq04.png", alt: "short quote"},
     {id: "love", src: "images/lq/lq04.png", alt: "love quote"},
     {id: "song", src: "images/sgq/sgq04.png", alt: "song quote"},
+    {id: "short", src: "images/shq/shq05.png", alt: "short quote"},
+    {id: "love", src: "images/lq/lq05.png", alt: "love quote"},
+    {id: "song", src: "images/sgq/sgq05.png", alt: "song quote"},
+    {id: "motiv", src: "images/mq/mq05.png", alt: "motivational quote"},
+    {id: "love", src: "images/lq/lq06.png", alt: "love quote"},
+    {id: "short", src: "images/shq/shq06.png", alt: "short quote"},
+    {id: "song", src: "images/sgq/sgq06.png", alt: "song quote"},
+    {id: "motiv", src: "images/mq/mq06.png", alt: "motivational quote"},
 ]
 
 const container = document.getElementById("quotesContainer")
