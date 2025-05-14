@@ -1,6 +1,6 @@
 let = currentCategory = null // Nenhuma categoria selecionada inicialmente
 
- function showCategory(categoryId) {
+ /*function showCategory(categoryId) {
       
        const container = document.getElementById('quote-container');
       container.innerHTML = ""; // limpa conteúdo anterior
@@ -21,7 +21,20 @@ let = currentCategory = null // Nenhuma categoria selecionada inicialmente
         document.getElementById("quotesContainer").style.display = "flex";
         document.getElementById("quote-container").innerHTML = ""; // esconde outras categorias
         
+}*/
+
+function showCategory(category) {
+  const allQuotes = document.querySelectorAll('.category');
+
+  allQuotes.forEach(quote => {
+    if (category === 'all' || quote.id === category) {
+      quote.style.display = 'block';
+    } else {
+      quote.style.display = 'none';
+    }
+  });
 }
+
 
 const quotes = [
     {id: "motiv", src: "images/mq/mq01.png", alt: "motivational quote"},
