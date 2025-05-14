@@ -1,28 +1,5 @@
 let = currentCategory = null // Nenhuma categoria selecionada inicialmente
 
- /*function showCategory(categoryId) {
-      
-       const container = document.getElementById('quote-container');
-      container.innerHTML = ""; // limpa conteúdo anterior
-
-      const filteredQuotes = quotes.filter(q => q.id === categoryId);
-
-      filteredQuotes.forEach(quote => {
-        const img = document.createElement('img');
-        img.src = quote.src;
-        img.alt = quote.alt;
-        img.classList.add('quote-img');
-        container.appendChild(img);
-      });
-
-    }
-
-    function showAllquotes() {
-        document.getElementById("quotesContainer").style.display = "flex";
-        document.getElementById("quote-container").innerHTML = ""; // esconde outras categorias
-        
-}*/
-
 function showCategory(category) {
   const allQuotes = document.querySelectorAll('.category');
 
