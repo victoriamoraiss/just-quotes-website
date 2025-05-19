@@ -21,16 +21,30 @@
             <ul class="menu">
                 <li><a href="index.html">home</a></li>
                 <li><a href="written quotes.html">written quotes</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="about-text">
-            <img src="images/about/about.png" alt="about this site">
+        <section class="c">
+            <h2>Contact:</h2>
+            <p id="email-link"></p>
         </section>
     </main>
+    <script>
+        const user = "justquotess01";
+        const domain = "gmail.com";
+        const email = user + "@" + domain;
+
+        const link = document.createElement("a");
+        link.href = "mailto:" + email;
+        link.textContent = email;
+
+        link.className = "email-style";
+
+        document.getElementById("email-link").appendChild(link);
+    </script>
     <footer>
         <p>&copy; 2025 Just Quotes. All rights reserved.</p>
     </footer>
