@@ -232,4 +232,10 @@ section li {
   line-height: 1.5; /* opcional: melhora a leitura */
 }
 
+#p {
+    font-size: 18px;
+    font-family: Arial, Helvetica;
+    text-align: center;
+}
+
 
