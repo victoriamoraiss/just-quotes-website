@@ -97,9 +97,10 @@ section {
     background-color: rgb(195, 221, 221);
     margin: 20px auto;   /* centraliza */
     padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;    /* largura máxima no desktop */
-    width: 90%;          /* no celular ocupa quase tudo */
+    border-radius: 8px;
+    max-width: 280px;    /* largura máxima no desktop */
+    width: 100%;          /* no celular ocupa quase tudo */
+    height: auto;
     box-sizing: border-box;
     text-align: center;
 }
