@@ -297,4 +297,9 @@ section li {
   section {
     margin: 10px 0;
   }
+
+   #about {
+    padding: 15px;
+    font-size: 15px;
+  }
 }
