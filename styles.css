@@ -8,9 +8,10 @@ h1 {
     text-align: center;
     background-color: rgb(218, 236, 236);
     padding: 40px 0;
-    margin: 0px 0;
+    margin: 0;
     font-size: 40px;
 }
+
 /*Menu*/
 .menu {
     list-style-type: none;
@@ -19,7 +20,7 @@ h1 {
     background-color: rgb(195, 221, 221);
     display: flex;
     justify-content: center;
-    
+    flex-wrap: wrap;
 }
 
 .menu li {
@@ -37,32 +38,31 @@ h1 {
     color: gray;
 }
 
-.quotes-container { /*images*/
-    padding: 0px 0;
-    margin: 350px;
-    margin-top: 20px;
-    padding-top: 0;
+/* Imagens */
+.quotes-container { 
+    margin: 20px auto;
+    padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     border-radius: 8px;
 }
 
 main {
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 section {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 /*buttons*/
 .buttons {
     text-align: center;
-    margin-top: 5px 0;
-    padding-top: 5px 0;
-  }
-
+    margin: 5px 0;
+    padding: 5px 0;
+}
 
 .b-wrapper {
     display: inline-block;
@@ -73,28 +73,28 @@ section {
 .b-wrapper p {
     margin: 5px 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+}
 
 #clickbutton {
-    padding-top: 20px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     margin-top: 0;
 }
 
 .button img {
-    transition: filter 0.2s ease, transform 0.2s ease
+    transition: filter 0.2s ease, transform 0.2s ease;
 }
 
 .button:hover img{
     filter: brightness(1.2);
 }
+
 .button:active img {
     transform: scale(1.1);
 }
 
 #about {
-    background-color:  rgb(195, 221, 221);
+    background-color: rgb(195, 221, 221);
     margin: 20px;
     padding: 15px;
 }
@@ -106,7 +106,7 @@ html {
 #about-text {
   text-align: center;
   padding: 10px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 footer {
@@ -114,16 +114,7 @@ footer {
     padding: 20px;
     background-color: rgb(195, 221, 221);
     font-family: 'Trebuchet MS', sans-serif;
-}
-
-.quotes-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
+    margin-top: 80px;
 }
 
 .category a {
@@ -134,20 +125,20 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     font-size: 0.9rem;
-    transition: background-color 0.2s
+    transition: background-color 0.2s;
 }
 
 .category a:hover {
-    background-color:  #e3ecec;;
+    background-color: #e3ecec;
 }
 
 #quote-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px; /* espaço entre as imagens */
+  gap: 16px;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .quote-img {
@@ -155,14 +146,15 @@ footer {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .wq h3 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .wq ul {
-    font-size: 30;
+    font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -170,40 +162,35 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding:  20px ;
-    padding-bottom: 200px;
+    padding: 20px;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 section {
-  flex: 1; /* Para que cada bloco tenha largura igual */
+  flex: 1;
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 10px;
 }
 
-
 .section-m {
-   margin-left: 20px;
-   padding-top: 10px;
+   margin: 10px;
    border-color: #99b8e0;
 }
 
 .section-l {
-   margin-left: 50px;
+   margin: 10px;
    border-color:#ff8f92;
 }
 
 .section-sh {
-   margin-left: 50px;
-   margin-right: 20px; 
-   padding-bottom: 10px;
-   border-color:#72c69e
+   margin: 10px;
+   border-color:#72c69e;
 }
 
 .section-m h3{
     background-color: #99b8e0;
-    display: block;
     padding: 5px;
     border-radius: 5px;
     text-align: center;
@@ -212,7 +199,6 @@ section {
 
 .section-l h3{
     background-color: #ff8f92;
-    display: block;
     padding: 5px;
     border-radius: 5px;
     text-align: center;
@@ -221,7 +207,6 @@ section {
 
 .section-sh h3{
     background-color: #72c69e;
-    display: block;
     padding: 5px;
     border-radius: 5px;
     text-align: center;
@@ -230,7 +215,7 @@ section {
 
 section li {
   margin-bottom: 8px;
-  line-height: 1.5; /* optional: improve reading */
+  line-height: 1.5;
 }
 
 #p {
@@ -241,38 +226,56 @@ section li {
 
 .c {
     border: 1px solid #81c8cf;
-    border-radius: 5px;;
     padding: 10px;
     border-radius: 10px;
-    text-align:  center;
-    margin-bottom: 300px;
-    margin-top: 5px;
-    width: 200px; 
-    margin: 20px auto;
     text-align: center;
+    margin: 20px auto;
+    width: 200px; 
 }
 
-
- .email-style {
+.email-style {
     color:#000000;
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-size: 14px;
-  }
+}
 
-  .email-style:hover {
+.email-style:hover {
     color: #69a3a8;
-  }
+}
 
-  .c h2 {
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ;
+.c h2 {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      color: #000000;
      background-color: #71abb1;
      display: inline-block;
      padding: 5px;                   
      border-radius: 8px;
+}
+
+/* Ajustes para celular */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    padding: 20px 0;
   }
 
-  footer {
-    margin-top: 150px;
+  .menu {
+    flex-direction: column;
+    text-align: center;
   }
+
+  .wq {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .quote-img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  section {
+    margin: 10px 0;
+  }
+}
