@@ -93,16 +93,16 @@ section {
     transform: scale(1.1);
 }
 
+/* About */
 #about {
     background-color: rgb(195, 221, 221);
     margin: 20px auto;   /* centraliza */
     padding: 20px;
-    border-radius: 8px;
     max-width: 280px;    /* largura máxima no desktop */
     width: 100%;          /* no celular ocupa quase tudo */
     height: auto;
-    box-sizing: border-box;
     text-align: center;
+    border: none; 
 }
 
 html {
@@ -114,6 +114,7 @@ html {
     padding: 10px;
     font-size: 16px;
     line-height: 1.6;
+    border: none; 
 }
 
 footer {
